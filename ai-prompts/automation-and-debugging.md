@@ -218,3 +218,55 @@ Suggested keeping future Toolshop automation aligned with the same framework.
 ### Debugging Outcome
 TC001 – User Registration was successfully automated and executed using the existing Prism Playwright framework.
 
+
+###  Automate TC002 – Verify successful login with valid credentials.
+
+Reuse the existing Prism Playwright framework and existing Login Page Object wherever possible, and the Toolshop changes already implemented.
+
+Use the following existing valid test user for login:
+
+Email: testUserforAiAssignment@gmail.com
+Password: testUserforAi@123
+
+If a login test data file does not already exist, create one following the existing framework conventions and store these credentials there instead of hardcoding them in the test.
+
+Update only the files required for the Login flow.
+
+Follow the existing Page Object Model, folder structure, reusable utilities, coding style and naming conventions.
+
+Do not modify unrelated files.
+
+
+
+### Automate TC003 – Verify login validation for invalid and mandatory field inputs.
+
+Reuse the existing Prism Playwright framework, Toolshop changes, Login Page Object, and the existing Toolshop Login test spec.
+
+Add TC003 as a new Playwright test within the existing Login spec file instead of creating a new spec file.
+
+Create any additional test data required following the existing framework conventions.
+
+Update only the files required for TC003.
+
+Follow the existing Page Object Model, folder structure, reusable utilities, coding style and naming conventions.
+
+Do not modify unrelated files.
+
+### Framework Refactoring – Dynamic Toolshop User
+
+Objective:
+Remove dependency on a fixed Toolshop login account because the demo website periodically resets its data.
+
+Summary:
+- Created a reusable Toolshop user helper.
+- Registration now generates a fresh user using Faker.
+- Login tests reuse the generated credentials instead of hardcoded credentials.
+- Removed fixed Toolshop user from loginData.json.
+- Existing TC001, TC002 and TC003 continue to pass after the refactoring.
+
+Validation:
+- TC001 Passed
+- TC002 Passed
+- TC003 Passed
+
+

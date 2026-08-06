@@ -3,5 +3,14 @@
     "adminlogin":{
         "username":"jhonlee@mailinator.com",
         "password":"Welcome@1"
+    },
+    "invalidCredentials":{
+        "username":"invalid@example.com",
+        "password":"WrongPass@123"
+    },
+    "expectedMessages":{
+        "emailRequired":"Email is required",
+        "passwordRequired":"Password is required",
+        "invalidLogin":"Invalid email or password"
     }
 }

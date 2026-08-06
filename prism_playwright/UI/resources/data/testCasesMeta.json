@@ -17,5 +17,13 @@
     "registration": [
       "__comment: Toolshop - User Registration test case IDs (TC001). Replace with Jira keys when available.",
       "TC001"
+    ],
+    "toolshop_login": [
+      "__comment: Toolshop - Login test case IDs (TC002). Replace with Jira keys when available.",
+      "TC002"
+    ],
+    "toolshop_login_validation": [
+      "__comment: Toolshop - Login validation test case IDs (TC003). Replace with Jira keys when available.",
+      "TC003"
     ]
   }
