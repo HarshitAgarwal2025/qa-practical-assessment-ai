@@ -33,5 +33,9 @@
     "shopping_cart": [
       "__comment: Toolshop - Shopping Cart test case IDs (TC005). Replace with Jira keys when available.",
       "TC005"
+    ],
+    "checkout_validation": [
+      "__comment: Toolshop - Checkout validation test case IDs (TC006). Replace with Jira keys when available.",
+      "TC006"
     ]
   }

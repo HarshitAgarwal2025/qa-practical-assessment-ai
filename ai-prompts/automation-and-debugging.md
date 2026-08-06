@@ -298,3 +298,37 @@ Update only the required files.
 Do not modify unrelated files.
 
 If a suitable Page Object or spec file already exists for the same feature, reuse it instead of creating a new one.
+
+
+### Automate TC006 – Verify mandatory field validation during checkout.
+
+*** Prompt 1: *** 
+
+Reuse the existing Prism Playwright framework and Toolshop changes.
+
+Reuse the existing Page Objects wherever possible. If new methods are needed, add them to the existing Page Objects.
+
+Create a Checkout spec if it doesn't already exist. Keep all Checkout related test cases in the same spec file.
+
+Reuse the existing Shopping Cart flow wherever required.
+
+Update only the required files.
+
+Do not modify unrelated files.
+
+If a suitable Page Object or spec file already exists, reuse it instead of creating a new one.
+
+Observation
+The AI generated the automation, but the first execution did not work correctly.
+It spent time exploring the checkout flow and the selected product was not suitable for the checkout scenario.
+
+*** Prompt 2: ***
+Use the existing framework and start implementing the automation directly.
+
+Do not spend time exploring the application unless it is required to identify a missing locator.
+
+Reuse the existing Checkout, Shopping Cart and Product Discovery flow.
+
+Fix the existing implementation instead of creating a new one.
+
+

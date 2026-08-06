@@ -7,6 +7,7 @@ const { districtPage } = require("./districtPage");
 const { registrationPage } = require("./registrationPage");
 const { productDiscoveryPage } = require("./productDiscoveryPage");
 const { shoppingCartPage } = require("./shoppingCartPage");
+const { checkoutPage } = require("./checkoutPage");
 
 /**This is common class to create object and refrences for each page
  *  and then calling getter methods in test cases using POManager*/
@@ -23,6 +24,7 @@ class POManager {
     this.registrationPage = new registrationPage(this.page);
     this.productDiscoveryPage = new productDiscoveryPage(this.page);
     this.shoppingCartPage = new shoppingCartPage(this.page);
+    this.checkoutPage = new checkoutPage(this.page);
   }
 
   getLoginPage() {
@@ -59,6 +61,10 @@ class POManager {
 
   getShoppingCartPage() {
     return this.shoppingCartPage;
+  }
+
+  getCheckoutPage() {
+    return this.checkoutPage;
   }
 
 }

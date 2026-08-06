@@ -1,0 +1,14 @@
+{
+    "_comment": "Test data for TC006 Checkout — mandatory field validation during checkout",
+    "searchKeyword": "Thor Hammer",
+    "mandatoryFields": [
+        "guest-email",
+        "guest-first-name",
+        "guest-last-name"
+    ],
+    "expectedMessages": {
+        "guest-email": "Email is required",
+        "guest-first-name": "First name is required",
+        "guest-last-name": "Last name is required"
+    }
+}
