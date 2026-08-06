@@ -1,8 +1,8 @@
 // @ts-check
-import { defineConfig } from "@playwright/test";
+const { defineConfig } = require("@playwright/test");
 require('dotenv').config();
 
-export default defineConfig({
+module.exports = defineConfig({
   testDir: "./tests",
   retries: 0,
   workers: 2,

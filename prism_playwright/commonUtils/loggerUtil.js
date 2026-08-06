@@ -1,7 +1,7 @@
 
-import { logger } from "../UI/utilities/logger";
+const { logger } = require("../UI/utilities/logger");
 
-export default class loggerUtilities {
+class loggerUtilities {
     /**
      * Creates an instance of CommonUtils.
      * @constructor
@@ -21,3 +21,5 @@ export default class loggerUtilities {
 
     
 }
+
+module.exports = loggerUtilities;

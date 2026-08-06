@@ -1,6 +1,6 @@
-import { test, expect } from "@playwright/test";
+const { test, expect } = require("@playwright/test");
 require("dotenv").config();
-import loggerUtilities from "../../commonUtils/loggerUtil";
+const loggerUtilities = require("../../commonUtils/loggerUtil");
 class loginPage {
   constructor(page) {
     this.page = page;
@@ -58,4 +58,4 @@ class loginPage {
   }
 
 }
-export default { loginPage };
+module.exports = { loginPage };

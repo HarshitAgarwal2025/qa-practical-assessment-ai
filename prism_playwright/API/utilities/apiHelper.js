@@ -1,5 +1,5 @@
 const { page, request, expect } = require("@playwright/test");
-import { _Response } from "../testdata/commonAPIResponse";
+const { _Response } = require("../testdata/commonAPIResponse");
 const getCurl = require("./requestToCurlLogger");
 
 class commonMethods {

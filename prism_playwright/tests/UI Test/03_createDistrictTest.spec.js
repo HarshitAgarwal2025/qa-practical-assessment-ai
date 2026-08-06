@@ -1,8 +1,8 @@
 const { test, expect, chromium } = require("@playwright/test");
 const { POManager } = require("../../UI/pageobjects/POManager");
-import * as login from "../../UI/resources/data/loginData.json";
+const login = require("../../UI/resources/data/loginData.json");
 const homeData = require("../../API/pageobjects/homePage");
-import { commonMethods } from "../../API/utilities/apiHelper";
+const { commonMethods } = require("../../API/utilities/apiHelper");
 const mocker = require("../../commonUtils/mocker");
 const utils = require('../../commonUtils/utils');
 

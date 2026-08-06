@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-import loggerUtilities from "../../commonUtils/loggerUtil";
+const loggerUtilities = require("../../commonUtils/loggerUtil");
 
 class districtPage {
     /**Constructor to initilize locators for the page */

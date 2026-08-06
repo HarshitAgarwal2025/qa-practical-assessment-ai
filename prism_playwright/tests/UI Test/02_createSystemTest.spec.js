@@ -1,8 +1,8 @@
 const { test, expect } = require("@playwright/test");
 const { POManager } = require("../../UI/pageobjects/POManager");
-import { faker } from '@faker-js/faker/locale/en';
-import * as login from "../../UI/resources/data/loginData.json";
-import * as system from "../../UI/resources/data/system.json";
+const { faker } = require('@faker-js/faker/locale/en');
+const login = require("../../UI/resources/data/loginData.json");
+const system = require("../../UI/resources/data/system.json");
 const utils = require('../../commonUtils/utils');
 
 /**Using faker.js for getting random data*/

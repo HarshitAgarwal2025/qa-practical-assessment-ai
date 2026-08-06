@@ -1,5 +1,5 @@
 const { test, expect } = require("@playwright/test");
-const { default: loggerUtilities } = require("../../commonUtils/loggerUtil");
+const loggerUtilities = require("../../commonUtils/loggerUtil");
 
 class navigationBar {
   constructor(page) {

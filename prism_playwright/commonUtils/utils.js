@@ -1,9 +1,9 @@
-import fs from "fs";
-import path from "path";
-import { test }  from "@playwright/test";
-import { parse } from "csv-parse/sync";
+const fs = require("fs");
+const path = require("path");
+const { test } = require("@playwright/test");
+const { parse } = require("csv-parse/sync");
 const pdfParse = require('pdf-parse');
-import * as testCasesMeta from "../UI/resources/data/testCasesMeta.json";
+const testCasesMeta = require("../UI/resources/data/testCasesMeta.json");
 
 /**
  * Read the csv file and return data in array

@@ -1,4 +1,4 @@
-import { appendFileSync,writeFile } from "fs";
+const { appendFileSync, writeFile } = require("fs");
 
 const logApiRequest = async (method, endPoint, headers, postData) => {
   // Construct the curl command

@@ -1,4 +1,4 @@
-import { random } from "faker";
+const { random } = require("faker");
 // For creation of Login page data
 // create JSON objects for headers and endpoints corresponding to respective page.
 

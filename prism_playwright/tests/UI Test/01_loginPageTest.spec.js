@@ -1,6 +1,6 @@
 const { test ,expect} = require("@playwright/test");
 const { POManager } = require("../../UI/pageobjects/POManager");
-import * as login from "../../UI/resources/data/loginData.json";
+const login = require("../../UI/resources/data/loginData.json");
 const utils = require('../../commonUtils/utils');
 
 test.describe('Login internal user', () => {

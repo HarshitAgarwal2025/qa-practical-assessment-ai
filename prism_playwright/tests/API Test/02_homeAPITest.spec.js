@@ -1,7 +1,7 @@
-import { test, expect } from "@playwright/test";
-import { commonMethods } from "../../API/utilities/apiHelper";
-import { _Response } from "../../API/testdata/commonAPIResponse";
-import { storeResponseToJsonFile } from "../../API/utilities/storeFullAPIResponse"
+const { test, expect } = require("@playwright/test");
+const { commonMethods } = require("../../API/utilities/apiHelper");
+const { _Response } = require("../../API/testdata/commonAPIResponse");
+const { storeResponseToJsonFile } = require("../../API/utilities/storeFullAPIResponse");
 const { DynamicData } = require("../../API/utilities/createDynamicData");
 const homeData = require("../../API/pageobjects/homePage");
 const suiteInfo = require("../../API/utilities/requestToCurlLogger");

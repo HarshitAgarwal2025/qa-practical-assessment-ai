@@ -13,5 +13,9 @@
     ],
     "pdf_verification":[
       "PA-12139"  
+    ],
+    "registration": [
+      "__comment: Toolshop - User Registration test case IDs (TC001). Replace with Jira keys when available.",
+      "TC001"
     ]
   }

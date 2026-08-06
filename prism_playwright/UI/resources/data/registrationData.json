@@ -1,0 +1,12 @@
+{
+    "_comment": "Static test data for TC001 User Registration. Fields that must be unique per run (firstName, lastName, email) and address variety fields (street, city, state, postalCode) are generated via faker in the test spec.",
+    "validUser": {
+        "dob": "2001-01-01",
+        "houseNumber": "42",
+        "country": "US",
+        "phone": "0612345678"
+    },
+    "expectedMessages": {
+        "emailAlreadyExists": "A customer with this email address already exists."
+    }
+}
