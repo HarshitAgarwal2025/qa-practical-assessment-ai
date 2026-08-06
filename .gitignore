@@ -6,6 +6,7 @@ prism_playwright/playwright-report/
 
 # Playwright test results
 prism_playwright/test-results/
+test-results/
 
 # Logs
 *.log
@@ -21,3 +22,6 @@ npm-debug.log*
 # IDE files
 .vscode/
 .idea/
+
+# Playwright reports
+prism_playwright/playwright-report/
