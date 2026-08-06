@@ -1,0 +1,23 @@
+# Node modules
+prism_playwright/node_modules/
+
+# Playwright reports
+prism_playwright/playwright-report/
+
+# Playwright test results
+prism_playwright/test-results/
+
+# Logs
+*.log
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# Environment
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
