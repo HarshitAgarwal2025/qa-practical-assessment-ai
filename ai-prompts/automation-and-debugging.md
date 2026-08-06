@@ -269,4 +269,17 @@ Validation:
 - TC002 Passed
 - TC003 Passed
 
+### Automate TC004 – Verify product search, filter and sorting functionality.
+
+Reuse the existing Prism Playwright framework and the Toolshop changes already implemented.
+
+Reuse the existing Page Objects wherever possible. If any new methods are required, add them to the existing Page Objects instead of creating duplicate files.
+
+Create a Product Discovery spec if it doesn't already exist. Keep all Product Discovery related test cases in the same spec file.
+
+Update only the required files.
+
+Follow the existing Page Object Model, folder structure and coding style.
+
+Do not modify unrelated files.
 

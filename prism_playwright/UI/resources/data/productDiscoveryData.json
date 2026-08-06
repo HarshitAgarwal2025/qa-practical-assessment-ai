@@ -1,0 +1,11 @@
+{
+    "_comment": "Test data for TC004 Product Discovery — search, filter and sorting",
+    "searchKeyword": "pliers",
+    "category": "Pliers",
+    "brand": "ForgeFlex Tools",
+    "sort": {
+        "priceHighToLow": "price,desc",
+        "priceLowToHigh": "price,asc",
+        "nameAsc": "name,asc"
+    }
+}
