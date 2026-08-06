@@ -29,5 +29,9 @@
     "product_discovery": [
       "__comment: Toolshop - Product Discovery test case IDs (TC004). Replace with Jira keys when available.",
       "TC004"
+    ],
+    "shopping_cart": [
+      "__comment: Toolshop - Shopping Cart test case IDs (TC005). Replace with Jira keys when available.",
+      "TC005"
     ]
   }

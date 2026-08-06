@@ -1,0 +1,7 @@
+{
+    "_comment": "Test data for TC005 Shopping Cart — add to cart and quantity update",
+    "searchKeyword": "Combination Pliers",
+    "productName": "Combination Pliers",
+    "initialQuantity": 1,
+    "updatedQuantity": 3
+}

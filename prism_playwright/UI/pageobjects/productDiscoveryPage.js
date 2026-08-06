@@ -90,6 +90,16 @@ class productDiscoveryPage {
         this.log.logger("Product prices verified in descending order");
     }
 
+    /** Open the product detail page for the first product in the current listing */
+    async openFirstProductDetails() {
+        const productLink = this.page.locator('a [data-test="product-name"]').first();
+        await expect(productLink).toBeVisible();
+        await productLink.click();
+        await this.page.waitForURL('**/product/**');
+        await this.page.waitForLoadState('networkidle');
+        this.log.logger("Opened product details for the first listed product");
+    }
+
     /** Returns trimmed product names currently displayed on the page */
     async getProductNames() {
         const names = await this.productNames.allTextContents();

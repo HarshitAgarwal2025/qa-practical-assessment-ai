@@ -283,3 +283,18 @@ Follow the existing Page Object Model, folder structure and coding style.
 
 Do not modify unrelated files.
 
+### Automate TC005 – Verify adding products to cart and updating product quantity.
+
+Reuse the existing Prism Playwright framework and Toolshop changes.
+
+Reuse the existing Page Objects wherever possible. If new methods are needed, add them to the existing Page Objects.
+
+Create a Shopping Cart spec if it doesn't already exist. Keep all Shopping Cart related test cases in the same spec file.
+
+Reuse the existing dynamic user registration and login flow if required.
+
+Update only the required files.
+
+Do not modify unrelated files.
+
+If a suitable Page Object or spec file already exists for the same feature, reuse it instead of creating a new one.
