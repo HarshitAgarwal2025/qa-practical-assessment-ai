@@ -1,0 +1,6 @@
+{
+    "_comment": "Test data for Toolshop API invoice flow (TC007). Billing address is sourced from the logged-in user profile via GET /users/me.",
+    "paymentMethod": "cash-on-delivery",
+    "paymentDetails": {},
+    "invoiceNumberPrefix": "INV-"
+}

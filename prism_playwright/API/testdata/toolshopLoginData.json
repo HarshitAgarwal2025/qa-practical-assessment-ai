@@ -1,0 +1,7 @@
+{
+    "_comment": "Test data for Toolshop API login (TC002). Uses the default demo customer2 account because customer@ may be locked after repeated failed attempts.",
+    "validUser": {
+        "email": "customer2@practicesoftwaretesting.com",
+        "password": "welcome01"
+    }
+}
