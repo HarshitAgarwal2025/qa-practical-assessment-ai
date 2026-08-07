@@ -332,3 +332,91 @@ Reuse the existing Checkout, Shopping Cart and Product Discovery flow.
 Fix the existing implementation instead of creating a new one.
 
 
+# TC007 – Order Placement Automation
+
+## Objective
+
+Automate the Order Placement test case to verify the complete purchase journey from login to successful order confirmation.
+
+## Prompt 1
+
+Automate TC007 – Verify successful order placement in the Toolshop application.
+
+Reuse the existing Prism Playwright framework and Toolshop changes.
+
+Reuse the existing Registration, Login, Product Discovery, Shopping Cart and Checkout flow wherever possible.
+
+Reuse the existing Page Objects. If new methods are needed, add them to the existing Page Objects.
+
+Create an Order Placement spec if it doesn't already exist. Keep all Order Placement related test cases in the same spec file.
+
+Update only the required files.
+
+Do not modify unrelated files.
+
+If a suitable Page Object or spec file already exists for the same feature, reuse it instead of creating a new one.
+
+## Observation 1
+
+- The automation was created successfully.
+- During execution, it was observed that the Confirm button had to be clicked twice to continue the order flow.
+
+## Prompt 2
+One more thing: the Confirm button needs to be clicked twice to generate the invoice. Please use this in the automation.
+
+## Observation 2
+
+- The payment was completed successfully.
+- After the "Payment was successful" message, the Confirm button had to be clicked twice again to generate the invoice page.
+
+## Prompt 3
+When we click "Confirm" button twice then "Payment was successful" message is displayed, then we have to click "Confirm" button twice again to get the invoice.
+
+Add this in the script.
+
+## Observation 3
+
+- The invoice page opened successfully.
+- The automation was still waiting for the Finish button to become enabled even though the order was already completed.
+
+## Prompt 4
+Execution worked as expected, after clicking "Confirm" button twice again, invoice gets generated.
+
+For invoice only this message is displayed:
+
+"Thanks for your order! Your invoice number is INV-'Random invoice number'."
+
+We need to only check if we are able to see this message. If it is visible, that means our execution flow is completed and the test case should end here.
+
+Incorporate the above checks in the script.
+
+## Prompt 5
+
+The order is getting placed successfully and the order confirmation page is displayed.
+
+This should be considered the successful end of the test.
+
+Please remove the final assertion that waits for the Finish button to become enabled.
+
+Instead, verify that the order confirmation message is displayed and end the test there.
+
+## AI Response Summary
+
+- Created the Order Placement automation.
+- Reused the existing Product Discovery, Shopping Cart and Checkout flow.
+- Updated the automation based on the actual application behaviour.
+- Added the required Confirm button actions.
+- Updated the final validation to verify the order confirmation message instead of waiting for the Finish button.
+
+## Validation
+
+- Reviewed the generated code.
+- Executed the test multiple times.
+- Updated the prompts based on the application behaviour.
+- Verified the complete purchase flow.
+- Verified the order confirmation message with the invoice number was displayed.
+- Test passed successfully.
+
+## Final Outcome
+
+TC007 was automated successfully after refining the prompts based on the actual behaviour of the Toolshop demo application.

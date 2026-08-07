@@ -100,6 +100,30 @@ class productDiscoveryPage {
         this.log.logger("Opened product details for the first listed product");
     }
 
+    /** Open product details for the first in-stock product in the current listing */
+    async openFirstInStockProductDetails() {
+        const productLinks = this.page.locator('a [data-test="product-name"]');
+        await expect(productLinks.first()).toBeVisible();
+        const count = await productLinks.count();
+
+        for (let i = 0; i < count; i++) {
+            await productLinks.nth(i).click();
+            await this.page.waitForURL('**/product/**');
+            await this.page.waitForLoadState('networkidle');
+
+            const addToCartBtn = this.page.locator('[data-test="add-to-cart"]');
+            if (await addToCartBtn.isEnabled()) {
+                this.log.logger("Opened in-stock product details from listing position: " + (i + 1));
+                return;
+            }
+
+            await this.page.goBack();
+            await this.page.waitForLoadState('networkidle');
+        }
+
+        throw new Error('No in-stock product found in the current listing');
+    }
+
     /** Returns trimmed product names currently displayed on the page */
     async getProductNames() {
         const names = await this.productNames.allTextContents();

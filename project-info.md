@@ -66,7 +66,7 @@ The process followed was:
 
 This approach allowed AI to act as a collaborative assistant while maintaining manual QA review and validation of the generated artefacts.
 
-## 7. Using AI for Automation Framework Planning
+## 7. ## 7. Using AI for Automation Design
 
 AI was used to analyse the existing Prism Playwright framework and determine how it could be adapted for the Toolshop application before starting automation development.
 
@@ -81,5 +81,4 @@ The process followed was:
 Rather than accepting every recommendation, only the framework components relevant to the assessment were selected. Unnecessary suggestions such as additional modules and complete application coverage were intentionally excluded to keep the implementation focused on the critical user journeys identified during manual test design.
 
 This approach ensured that AI was used as a design assistant while the final implementation decisions remained based on engineering judgement.
-
 

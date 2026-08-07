@@ -37,5 +37,9 @@
     "checkout_validation": [
       "__comment: Toolshop - Checkout validation test case IDs (TC006). Replace with Jira keys when available.",
       "TC006"
+    ],
+    "order_placement": [
+      "__comment: Toolshop - Order Placement test case IDs (TC007). Replace with Jira keys when available.",
+      "TC007"
     ]
   }

@@ -1,0 +1,7 @@
+{
+    "_comment": "Test data for TC007 Order Placement — complete purchase journey from login to order confirmation",
+    "searchKeyword": "pliers",
+    "quantity": 1,
+    "paymentMethod": "Cash on Delivery",
+    "invoiceConfirmationPrefix": "Thanks for your order! Your invoice number is INV-"
+}
