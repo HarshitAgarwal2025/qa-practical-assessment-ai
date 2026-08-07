@@ -25,3 +25,7 @@ npm-debug.log*
 
 # Playwright reports
 prism_playwright/playwright-report/
+
+API/testdata/toolshopAccessToken.json
+API/testdata/toolshopCart.json
+API/testdata/toolshopInvoice.json

@@ -8,18 +8,18 @@ The assessment demonstrates the use of AI throughout the QA lifecycle, including
 
 ## Repository Structure
 
-```text
-.
 ├── ai-prompts/
 │   ├── requirements-and-planning.md
 │   ├── test-design.md
 │   ├── automation-and-debugging.md
 │   └── documentation-and-summary.md
 ├── prism_playwright/
+├── execution-evidence/
 ├── FunctionalTestCase.csv
 ├── project-info.md
+├── tool-workflow.md
+├── exploratory-testing-notes.md
 └── README.md
-```
 
 ## Contents
 
