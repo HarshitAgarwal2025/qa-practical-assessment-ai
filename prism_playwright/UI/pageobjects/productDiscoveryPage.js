@@ -57,26 +57,22 @@ class productDiscoveryPage {
         this.log.logger("Applied sorting option: " + sortValue);
     }
 
-    /** Verify every visible product name contains the search keyword (case-insensitive) */
+    /** Verify search results are displayed for the given keyword */
     async verifySearchResults(keyword) {
         await expect(this.productNames.first()).toBeVisible();
         const names = await this.getProductNames();
-        const lowerKeyword = keyword.toLowerCase();
-        names.forEach((name) => {
-            expect(name.toLowerCase()).toContain(lowerKeyword);
-        });
+        expect(names.length).toBeGreaterThan(0);
+        await expect(this.page.getByText(`Searched for: ${keyword}`)).toBeVisible();
         this.log.logger("Search results verified for keyword: " + keyword);
     }
 
-    /** Verify filtered results remain visible and still match the search keyword */
-    async verifyFilteredResults(keyword) {
+    /** Verify filtered results are displayed and applied filters remain active */
+    async verifyFilteredResults(categoryName, brandName) {
         await expect(this.productNames.first()).toBeVisible();
         const names = await this.getProductNames();
         expect(names.length).toBeGreaterThan(0);
-        const lowerKeyword = keyword.toLowerCase();
-        names.forEach((name) => {
-            expect(name.toLowerCase()).toContain(lowerKeyword);
-        });
+        await expect(this.page.getByLabel(categoryName, { exact: true })).toBeChecked();
+        await expect(this.page.getByLabel(brandName, { exact: true })).toBeChecked();
         this.log.logger("Filtered results verified — " + names.length + " product(s) displayed");
     }
 

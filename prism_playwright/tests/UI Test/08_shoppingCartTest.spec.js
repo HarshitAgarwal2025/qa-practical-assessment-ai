@@ -17,12 +17,13 @@ test.describe('Shopping Cart', () => {
     });
 
     /**UI TC005 - Verify adding products to cart and updating product quantity */
-    test('Verify adding products to cart and updating product quantity @sanity @regression', async ({ page }) => {
+    test('Verify adding products to cart and updating product quantity @Smoke @regression', async ({ page }) => {
         await utils.addTestAnnotationsByKeyword("shopping_cart");
 
         // Step 1: Open product details
         await productDiscoveryPage.searchProduct(cartData.searchKeyword);
-        await productDiscoveryPage.openFirstProductDetails();
+        await productDiscoveryPage.openFirstInStockProductDetails();
+        const productName = await shoppingCartPage.getProductName();
         const unitPrice = await shoppingCartPage.getUnitPrice();
 
         // Step 2: Add product to cart
@@ -31,7 +32,7 @@ test.describe('Shopping Cart', () => {
 
         // Step 3: Update quantity and verify cart totals
         await shoppingCartPage.goToCart();
-        await shoppingCartPage.verifyProductInCart(cartData.productName);
+        await shoppingCartPage.verifyProductInCart(productName);
         await shoppingCartPage.updateCartItemQuantity(cartData.updatedQuantity);
         await shoppingCartPage.verifyCartTotals(unitPrice, cartData.updatedQuantity);
 

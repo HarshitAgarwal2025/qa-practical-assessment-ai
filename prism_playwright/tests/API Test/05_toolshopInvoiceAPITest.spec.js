@@ -11,7 +11,7 @@ test.beforeAll(async () => {
 });
 
 /** API TC007 - Generate invoice from existing cart and verify the response */
-test("Verify invoice generation and invoice response @sanity @regression", async () => {
+test("Verify invoice generation and invoice response @regression", async () => {
     test.info().annotations.push({ type: "test_key", description: "TC007" });
 
     const commonRequest = new commonMethods();

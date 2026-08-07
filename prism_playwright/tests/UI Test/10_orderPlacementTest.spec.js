@@ -21,7 +21,7 @@ test.describe('Order Placement', () => {
     });
 
     /**UI TC007 - Verify complete purchase journey from login to order confirmation */
-    test('Verify complete purchase journey from login to order confirmation @sanity @regression', async ({ page }) => {
+    test('Verify complete purchase journey from login to order confirmation @Smoke @regression', async ({ page }) => {
         await utils.addTestAnnotationsByKeyword("order_placement");
 
         // Step 1: Login

@@ -17,7 +17,7 @@ test.describe('User Login', () => {
     });
 
     /**UI TC002 - Verify successful login with valid credentials */
-    test('Verify successful login with valid credentials @sanity @regression', async ({ page }) => {
+    test('Verify successful login with valid credentials @Smoke @regression', async ({ page }) => {
         await utils.addTestAnnotationsByKeyword("toolshop_login");
         const user = await registerToolshopUser(page);
         await loginPage.loginToolshopUser(user.email, user.password);

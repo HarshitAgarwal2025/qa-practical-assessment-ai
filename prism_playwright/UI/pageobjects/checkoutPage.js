@@ -135,14 +135,11 @@ class checkoutPage {
     async clickConfirmTwice() {
         await expect(this.placeOrderBtn).toBeEnabled();
         await this.placeOrderBtn.click();
-        await expect(this.placeOrderBtn).toBeEnabled();
-        await this.placeOrderBtn.click();
     }
 
     /** Click the Confirm button twice to generate the invoice */
     async clickConfirmTwiceToGenerateInvoice() {
         await expect(this.placeOrderBtn).toBeEnabled();
-        await this.placeOrderBtn.click();
         await this.placeOrderBtn.click();
     }
 

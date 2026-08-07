@@ -10,7 +10,7 @@ test.beforeAll(async () => {
 });
 
 /** API TC002 - Verify successful login with valid credentials and obtain access token */
-test("Verify successful Toolshop login returns a bearer access token @sanity @regression", async () => {
+test("Verify successful Toolshop login returns a bearer access token @Smoke @regression", async () => {
     test.info().annotations.push({ type: "test_key", description: "TC002" });
 
     const headers = toolshopApiPage.loginHeader;

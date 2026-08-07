@@ -8,7 +8,13 @@ The application under test is an e-commerce platform that provides features such
 
 ## 2.  Primary AI Tool(s) Used
 
-The primary AI tool used for this assessment is **ChatGPT**.
+The primary AI tools used for this assessment were ChatGPT and Cursor AI.
+
+ChatGPT was mainly used for requirement analysis, test planning, documentation, test design and reviewing outputs.
+
+Cursor AI was mainly used for automation development, debugging, code generation and code refinement.
+
+All AI-generated outputs were reviewed and validated before being included in the final solution.
 
 AI is being used as a collaborative assistant to support planning, documentation, analysis, and refinement of QA artefacts. All AI-generated content is reviewed and validated before being included in the final deliverables.
 
@@ -54,37 +60,30 @@ This iterative process helped produce a more practical and assessment-focused Te
 
 ## 6. How AI was used for Manual Test Case Design
 
-AI was used to accelerate manual test case design through an iterative refinement process rather than generating the final output in a single prompt.
+AI was used to help prepare the first draft of the manual test cases.
 
 The process followed was:
 
--Generate an initial set of manual test cases covering the application's primary business workflows.
+- Generate initial test cases.
+- Review the generated test cases.
+- Add missing negative and validation scenarios.
+- Remove unnecessary test cases.
+- Review the final test cases before adding them to the project.
 
-- Review the generated output to identify missing areas such as negative, validation, edge/boundary and basic non-functional scenarios.
-- Refine the prompt to improve test coverage while keeping the test suite concise and focused on critical end-to-end user journeys.
-- Review the refined output manually to ensure the generated test cases aligned with the observed application behaviour before adding them to the final deliverables.
-
-This approach allowed AI to act as a collaborative assistant while maintaining manual QA review and validation of the generated artefacts.
+The final manual test cases were reviewed manually before using them.
 
 ## 7. Using AI for Automation Design
-
-AI was used to analyse the existing Prism Playwright framework and determine how it could be adapted for the Toolshop application before starting automation development.
+Before starting automation, I used AI to understand the existing Prism Playwright framework.
 
 The process followed was:
 
-1. Analyse the existing Playwright framework.
-2. Identify reusable components such as the Page Object Model, reusable utilities, reporting, configuration and test data management.
-3. Analyse the Toolshop application modules and major user workflows.
-4. Review the AI recommendations from a Senior QA perspective.
-5. Decide to retain the existing framework structure while introducing only Toolshop-specific Page Objects, test data and test scripts.
+1. Understand the existing framework.
+2. Identify reusable page objects and utilities.
+3. Add only the required Toolshop files.
+4. Review the generated code.
+5. Execute the tests and fix issues if required.
 
-Rather than accepting every recommendation, only the framework components relevant to the assessment were selected. Unnecessary suggestions such as additional modules and complete application coverage were intentionally excluded to keep the implementation focused on the critical user journeys identified during manual test design.
-
-This approach ensured that AI was used as a design assistant while the final implementation decisions remained based on engineering judgement.
-
-For API automation, I reused the existing Prism Playwright API framework instead of creating a new one.
-
-I reused the existing API utilities, common methods and Page Objects. Only the required API test data and test scripts were added.
+For API automation, I reused the existing API framework and added only the required login, cart and invoice test scripts.
 
 Separate JSON files were used for login, cart and invoice test data.
 
@@ -102,9 +101,9 @@ Separate JSON files were maintained to keep the test data reusable and easy to u
 
 ## 9. Using AI for Debugging Failing Tests
 
-AI was used to analyse execution failures and suggest possible fixes.
+AI helped identify possible reasons for test failures.
 
-The generated solution was never accepted directly. Every change was executed and validated before keeping it.
+After every suggested fix, I reviewed the code, executed the test again and kept only the changes that worked correctly.
 
 Some issues resolved during this assessment were:
 
@@ -131,4 +130,4 @@ AI can help with requirement analysis, test planning, manual test design, automa
 
 The generated output should always be reviewed, refined and validated before being used in the project.
 
-This approach helps improve productivity while maintaining engineering judgement and overall test quality.
+This approach saves time while keeping the final decisions and validation under manual review.

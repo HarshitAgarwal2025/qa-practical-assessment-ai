@@ -16,7 +16,7 @@ test.describe('User Registration', () => {
     });
 
     /**UI TC001 - Verify successful user registration with valid details */
-    test('Verify successful user registration with valid details @sanity @regression', async ({ page }) => {
+    test('Verify successful user registration with valid details @Smoke @regression', async ({ page }) => {
         await utils.addTestAnnotationsByKeyword("registration");
         await registrationPage.fillRegistrationForm(userData);
         await registrationPage.submitRegistrationForm();

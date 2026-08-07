@@ -36,6 +36,15 @@ class shoppingCartPage {
         return unitPrice;
     }
 
+    /** Returns the product name displayed on the product detail page */
+    async getProductName() {
+        const nameLocator = this.page.locator('[data-test="product-title"], h1').first();
+        await expect(nameLocator).toBeVisible();
+        const productName = (await nameLocator.textContent()).trim();
+        this.log.logger("Product name on product detail: " + productName);
+        return productName;
+    }
+
     /** Add the current product to the cart from the product detail page */
     async addToCart() {
         await expect(this.addToCartBtn).toBeVisible();
@@ -89,7 +98,8 @@ class shoppingCartPage {
     /** Verify the expected product name is shown in the checkout cart view */
     async verifyProductInCart(productName) {
         await expect(this.productTitle).toBeVisible();
-        await expect(this.productTitle).toHaveText(productName);
+        const actualName = (await this.productTitle.textContent()).trim();
+        expect(actualName).toBe(productName.trim());
         this.log.logger("Product in cart verified: " + productName);
     }
 }

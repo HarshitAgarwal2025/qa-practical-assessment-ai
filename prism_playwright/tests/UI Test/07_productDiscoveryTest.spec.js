@@ -15,7 +15,7 @@ test.describe('Product Discovery', () => {
     });
 
     /**UI TC004 - Verify product search, filter and sorting functionality */
-    test('Verify product search, filter and sorting functionality @sanity @regression', async ({ page }) => {
+    test('Verify product search, filter and sorting functionality @regression', async ({ page }) => {
         await utils.addTestAnnotationsByKeyword("product_discovery");
 
         // Step 1: Search for a product
@@ -25,7 +25,7 @@ test.describe('Product Discovery', () => {
         // Step 2: Apply category/brand filters
         await productDiscoveryPage.applyCategoryFilter(productData.category);
         await productDiscoveryPage.applyBrandFilter(productData.brand);
-        await productDiscoveryPage.verifyFilteredResults(productData.searchKeyword);
+        await productDiscoveryPage.verifyFilteredResults(productData.category, productData.brand);
 
         // Step 3: Apply sorting option
         await productDiscoveryPage.applySorting(productData.sort.priceHighToLow);

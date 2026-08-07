@@ -19,12 +19,12 @@ test.describe('Checkout', () => {
     });
 
     /**UI TC006 - Verify mandatory field validation during checkout */
-    test('Verify mandatory field validation during checkout @sanity @regression', async ({ page }) => {
+    test('Verify mandatory field validation during checkout @regression', async ({ page }) => {
         await utils.addTestAnnotationsByKeyword("checkout_validation");
 
         // Precondition: cart contains at least one product
         await productDiscoveryPage.searchProduct(checkoutData.searchKeyword);
-        await productDiscoveryPage.openFirstProductDetails();
+        await productDiscoveryPage.openFirstInStockProductDetails();
         await shoppingCartPage.addToCart();
         await shoppingCartPage.goToCart();
 

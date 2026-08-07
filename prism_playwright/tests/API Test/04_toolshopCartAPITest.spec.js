@@ -11,7 +11,7 @@ test.beforeAll(async () => {
 });
 
 /** API TC005 - Get product list, add a product to cart and verify cart contents */
-test("Verify product list, add to cart and cart contents @sanity @regression", async () => {
+test("Verify product list, add to cart and cart contents @regression", async () => {
     test.info().annotations.push({ type: "test_key", description: "TC005" });
 
     const commonRequest = new commonMethods();
