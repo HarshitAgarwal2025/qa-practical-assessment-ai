@@ -131,3 +131,23 @@ AI can help with requirement analysis, test planning, manual test design, automa
 The generated output should always be reviewed, refined and validated before being used in the project.
 
 This approach saves time while keeping the final decisions and validation under manual review.
+
+## 12. Requirement Traceability Matrix
+
+The following matrix provides traceability between the identified business requirements, manual test cases, and automation coverage.
+
+| Requirement / User Flow | Manual Test Cases | UI Automation | API Automation |
+| ----------------------- | ----------------- | ------------- | -------------- |
+| User Registration & Login | TC001, TC002, TC003 | TC001, TC002, TC003 | Login API |
+| Product Discovery & Shopping Cart | TC004, TC005 | TC004, TC005 | Shopping Cart API |
+| Checkout & Order Placement | TC006, TC007 | TC006, TC007 | Invoice API |
+
+### Coverage Summary
+
+- **Manual Test Coverage:** TC001 – TC007
+- **UI Automation Coverage:** TC001 – TC007
+- **API Automation Coverage:** Login, Shopping Cart and Invoice APIs
+- **Smoke Suite:** Covers the critical end-to-end user journey.
+- **Regression Suite:** Covers all implemented functional scenarios.
+
+This traceability matrix was prepared after completing the implementation to verify that every identified business requirement has corresponding manual and/or automated test coverage.
