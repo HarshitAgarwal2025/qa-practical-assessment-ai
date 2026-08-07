@@ -420,3 +420,93 @@ Instead, verify that the order confirmation message is displayed and end the tes
 ## Final Outcome
 
 TC007 was automated successfully after refining the prompts based on the actual behaviour of the Toolshop demo application.
+
+************************************************
+
+# API Automation
+
+## TC002 - Login API
+
+### Prompt 1
+
+Automate the Toolshop login API.
+
+Reuse the existing Prism Playwright API framework.
+
+Reuse the existing API utilities and Page Objects wherever possible.
+
+Update only the required files.
+
+### Prompt 2
+
+The default customer account is locked.
+
+Use another demo account and update the test data accordingly.
+
+### Validation
+
+- Verified the API returns a bearer token.
+- Verified the token is saved for the next API tests.
+- Executed the test successfully.
+
+## TC005 - Cart API
+
+### Prompt 1
+
+Automate the product search, cart creation and add to cart API flow.
+
+Reuse the existing login token.
+
+Reuse the existing Toolshop API Page Object.
+
+Update only the required files.
+
+### Validation
+
+- Verified product search.
+- Verified cart creation.
+- Verified product was added to the cart.
+- Executed the test successfully.
+
+
+## TC007 - Invoice API
+
+### Prompt 1
+
+Automate the invoice generation API.
+
+Reuse the existing login, token and cart flow.
+
+Reuse the existing Toolshop API Page Object.
+
+Update only the required files.
+
+
+### Prompt 2
+
+Use the POST /invoices API.
+
+Do not create new Page Objects unless required.
+
+
+### Prompt 3
+
+The invoice API is returning 422.
+
+Use a valid billing address instead of hardcoded values.
+
+
+### Prompt 4
+
+The invoice API is now working.
+
+Update the assertions based on the actual API response.
+
+
+### Validation
+
+- Verified invoice generation.
+- Verified invoice details.
+- Verified invoice lines.
+- Executed all API tests successfully.
+
