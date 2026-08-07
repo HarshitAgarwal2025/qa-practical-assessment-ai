@@ -1,0 +1,7 @@
+info: [2026-08-07T13:18:07.261Z] Navigated to Customer Registration page via Sign In → Register your account
+info: [2026-08-07T13:18:18.439Z] Registration form filled for: Marty.Toy@gmail.com
+info: [2026-08-07T13:18:20.988Z] Submitted registration form
+info: [2026-08-07T13:18:22.501Z] Registration successful — redirected to login page
+info: [2026-08-07T13:18:24.973Z] Submitted Toolshop login form for: Marty.Toy@gmail.com
+info: [2026-08-07T13:18:27.709Z] Toolshop login verified — user menu visible on account page
+UI TC002 Passed

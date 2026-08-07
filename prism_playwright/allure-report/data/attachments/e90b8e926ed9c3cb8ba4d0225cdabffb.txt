@@ -1,0 +1,6 @@
+info: [2026-08-07T13:18:34.315Z] Navigated to Toolshop Login page
+info: [2026-08-07T13:18:35.157Z] Submitted Toolshop login form
+info: [2026-08-07T13:18:35.177Z] Mandatory field validation errors verified — login blocked
+info: [2026-08-07T13:18:37.657Z] Submitted Toolshop login form for: invalid@example.com
+info: [2026-08-07T13:18:38.029Z] Invalid credentials error verified — login blocked
+UI TC003 Passed

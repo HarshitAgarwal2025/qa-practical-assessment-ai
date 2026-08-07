@@ -1,0 +1,4 @@
+Replaced!
+curl -X POST https://api.practicesoftwaretesting.comusers/login -H 'accept : application/json' -H 'Content-Type : application/json' -d '{"email":"customer2@practicesoftwaretesting.com","password":"welcome01"}'
+Data has been saved to toolshopAccessToken.json
+API TC002 Passed

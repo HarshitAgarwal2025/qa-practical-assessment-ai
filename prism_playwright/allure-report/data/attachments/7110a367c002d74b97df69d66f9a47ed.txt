@@ -1,0 +1,12 @@
+info: [2026-08-07T13:19:10.050Z] Navigated to Toolshop product catalog
+info: [2026-08-07T13:19:11.800Z] Searched for product keyword: Thor Hammer
+info: [2026-08-07T13:19:13.480Z] Opened in-stock product details from listing position: 1
+info: [2026-08-07T13:19:14.326Z] Clicked Add to cart on product detail page
+info: [2026-08-07T13:19:16.982Z] Navigated to checkout cart view
+info: [2026-08-07T13:19:19.063Z] Proceeded to guest customer information step
+info: [2026-08-07T13:19:19.924Z] Submitted guest customer information form with blank mandatory fields
+info: [2026-08-07T13:19:19.934Z] Mandatory field validation verified for [guest-email]
+info: [2026-08-07T13:19:19.940Z] Mandatory field validation verified for [guest-first-name]
+info: [2026-08-07T13:19:19.947Z] Mandatory field validation verified for [guest-last-name]
+info: [2026-08-07T13:19:19.958Z] Checkout blocked — billing and payment steps not reached
+UI TC006 Passed

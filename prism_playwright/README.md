@@ -66,3 +66,16 @@
 5. Headed Browser - npx playwright test --headed
 6. Browser Specific - npx playwright test --project webkit --project firefox
 7. Codegen - npx playwright codegen <WEB_URL>
+
+<!-- Test Reporting -->
+
+The framework supports:
+
+- Playwright HTML Report
+- Allure Report
+
+Generate Allure Report:
+
+bash
+npx allure generate ./allure-results --output ./allure-report
+npx allure open ./allure-report

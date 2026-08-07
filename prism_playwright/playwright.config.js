@@ -12,12 +12,13 @@ module.exports = defineConfig({
   expect: {
     timeout: 60000,
   },
-  reporter: 'html',
-  // reporter: [
-  //   ["allure-playwright", {
-  //     detail: false,
-  //     suiteTitle: false,
-  //   }],
+  reporter: [
+    ['html'],
+    ['allure-playwright', {
+      detail: false,
+      suiteTitle: false,
+    }]
+  ],
   //   ['html', { outputFolder: "./test-results" }],],
   projects: [
     // {
@@ -48,16 +49,12 @@ module.exports = defineConfig({
       use: {
         browserName: "chromium",
         headless: false,
-        screenshot: "on",
-        video: {
-          mode: "on",
-          size: { width: 1200, height: 780 },
-        },
-        //video: 'retain-on-failure',
+        screenshot: "only-on-failure",
+        video: "off",
+        trace: "off",
         ignoreHttpsErrors: true,
         permissions: ["geolocation"],
         viewport: { width: 1600, height: 1200 },
-        trace: "on", //off,on
         launchOptions: {
           slowMo: 800,
         },
