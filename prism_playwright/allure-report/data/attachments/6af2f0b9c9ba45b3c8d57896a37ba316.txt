@@ -1,0 +1,7 @@
+info: [2026-08-08T10:23:34.452Z] Navigated to Customer Registration page via Sign In → Register your account
+info: [2026-08-08T10:23:45.628Z] Registration form filled for: Vella.Langosh0@yahoo.com
+info: [2026-08-08T10:23:48.161Z] Submitted registration form
+info: [2026-08-08T10:23:48.663Z] Registration successful — redirected to login page
+info: [2026-08-08T10:23:51.146Z] Submitted Toolshop login form for: Vella.Langosh0@yahoo.com
+info: [2026-08-08T10:23:53.715Z] Toolshop login verified — user menu visible on account page
+UI TC002 Passed

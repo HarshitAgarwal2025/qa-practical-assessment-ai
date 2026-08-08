@@ -1,0 +1,20 @@
+info: [2026-08-08T10:24:17.119Z] Navigated to Customer Registration page via Sign In → Register your account
+info: [2026-08-08T10:24:28.277Z] Registration form filled for: Tyrell_Toy58@hotmail.com
+info: [2026-08-08T10:24:30.809Z] Submitted registration form
+info: [2026-08-08T10:24:31.015Z] Registration successful — redirected to login page
+info: [2026-08-08T10:24:33.494Z] Submitted Toolshop login form for: Tyrell_Toy58@hotmail.com
+info: [2026-08-08T10:24:35.960Z] Toolshop login verified — user menu visible on account page
+info: [2026-08-08T10:24:37.944Z] Navigated to Toolshop product catalog
+info: [2026-08-08T10:24:39.628Z] Searched for product keyword: pliers
+info: [2026-08-08T10:24:42.756Z] Opened in-stock product details from listing position: 2
+info: [2026-08-08T10:24:43.615Z] Clicked Add to cart on product detail page
+info: [2026-08-08T10:24:45.488Z] Nav cart quantity verified: 1
+info: [2026-08-08T10:24:46.334Z] Navigated to checkout cart view
+info: [2026-08-08T10:24:48.422Z] Proceeded to billing step as logged-in user
+info: [2026-08-08T10:24:53.847Z] Filled billing address for postal code: 54347-7806
+info: [2026-08-08T10:24:54.704Z] Proceeded to payment step
+info: [2026-08-08T10:24:55.519Z] Selected payment method: Cash on Delivery
+info: [2026-08-08T10:24:57.602Z] Payment was successful message displayed
+info: [2026-08-08T10:24:58.814Z] Order placement confirmed — invoice message displayed
+info: [2026-08-08T10:24:58.814Z] Clicked Confirm twice again to generate invoice
+UI TC007 Passed

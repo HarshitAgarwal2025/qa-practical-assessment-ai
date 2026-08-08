@@ -1,0 +1,12 @@
+info: [2026-08-08T10:23:59.048Z] Navigated to Toolshop product catalog
+info: [2026-08-08T10:24:00.827Z] Searched for product keyword: Combination Pliers
+info: [2026-08-08T10:24:04.006Z] Opened in-stock product details from listing position: 2
+info: [2026-08-08T10:24:04.015Z] Product name on product detail: Pliers
+info: [2026-08-08T10:24:04.021Z] Unit price on product detail: 12.01
+info: [2026-08-08T10:24:04.862Z] Clicked Add to cart on product detail page
+info: [2026-08-08T10:24:06.734Z] Nav cart quantity verified: 1
+info: [2026-08-08T10:24:07.586Z] Navigated to checkout cart view
+info: [2026-08-08T10:24:07.952Z] Product in cart verified: Pliers
+info: [2026-08-08T10:24:09.596Z] Updated cart item quantity to: 3
+info: [2026-08-08T10:24:11.509Z] Cart totals verified — quantity: 3, total: 36.03
+UI TC005 Passed
