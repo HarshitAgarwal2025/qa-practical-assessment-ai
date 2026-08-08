@@ -69,13 +69,17 @@
 
 <!-- Test Reporting -->
 
-The framework supports:
+## Test Reports
 
-- Playwright HTML Report
-- Allure Report
+This project includes the Allure HTML report generated from the latest successful regression execution.
 
-Generate Allure Report:
+The report is available under:
+
+text
+prism_playwright/allure-report/
+
+To open the report locally:
 
 bash
-npx allure generate ./allure-results --output ./allure-report
+cd prism_playwright
 npx allure open ./allure-report
